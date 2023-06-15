@@ -26,7 +26,8 @@ pipeline {
                     sh 'docker push sekhar89/Netflix_application_1:latest'
                 }
             }
-        post {
+            
+            post {
             always {
                 sh 'docker logout'
             }
