@@ -12,7 +12,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'docker build -t netflix_application_1:latest .'
+                sh 'docker build -t netflix_application_1 .'
             }
         }
         stage('login') {
@@ -27,8 +27,8 @@ pipeline {
 
         stage('Push to DockerHub') {
             steps {
-                    // sh 'docker tag netflix_application sekhar89/netflix_application:latest'
-                    sh 'docker push sekhar89/netflix_application_1:latest'
+                    sh 'docker image tag netflix_application_1 sekhar89/netflix_application_1:version1'
+                    sh 'docker image push sekhar89/netflix_application_1:version1'
                 }
             }
             stage('logout') {
