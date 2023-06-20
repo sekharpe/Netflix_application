@@ -1,5 +1,5 @@
 # Base image
-FROM node:14-alpine
+FROM node:16.14-alpine
 
 # Set the working directory inside the container
 WORKDIR /app
