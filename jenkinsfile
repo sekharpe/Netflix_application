@@ -27,7 +27,7 @@ pipeline {
 
         stage('Push to DockerHub') {
             steps {
-                    sh 'docker push sekhar89/netflix_application_1:latest'
+                    sh 'docker push netflix_application_1:latest'
                 }
             }
             stage('logout') {
