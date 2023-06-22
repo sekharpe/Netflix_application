@@ -1,4 +1,4 @@
-# Base image
+# Base image as shown below
 FROM node:16.14-alpine
 
 # Set the working directory inside the container
