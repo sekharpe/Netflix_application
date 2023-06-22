@@ -14,7 +14,7 @@ RUN pnpm install
 # Copy the application code to the working directory
 COPY . .
 
-# Build the React app
+# Build the React app as mentioned below
 RUN npm run build
 
 # Expose the container port
