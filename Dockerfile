@@ -1,7 +1,7 @@
 # Base image as shown below
 FROM node:16.14-alpine
 
-# Set the working directory inside the container to show
+# Set the working directory inside the container to show the contents
 WORKDIR /app
 
 # Copy the package.json and pnpm-lock.yaml files to the working directory
